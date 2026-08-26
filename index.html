@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kies Café — Galletas estilo Nueva York en Santa María la Ribera, CDMX</title>
+<meta name="description" content="Galletas gruesas estilo Nueva York recién horneadas, café de especialidad y brunch de 8:30 a 14:30 en Kies Café, Santa María la Ribera, CDMX.">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div style="background: var(--color-bg); color: var(--color-text); overflow-x: hidden;">
+
+  <header id="nav-bar" style="position: sticky; top: 0; z-index: 40; background: color-mix(in srgb, var(--color-bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid transparent; transition: border-color .35s ease, background .35s ease;">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 14px clamp(18px, 4vw, 40px); display: flex; flex-direction: column; gap: 12px;">
+      <div style="display: flex; align-items: center; justify-content: center; gap: 20px; width: 100%;">
+        <span aria-hidden="true" style="flex: 1 1 0; height: 1px; background: linear-gradient(to right, transparent, var(--color-accent)); display: inline-block;"></span>
+        <a href="#top" style="font-family: var(--font-heading); font-size: 21px; letter-spacing: .01em; color: var(--color-text); text-decoration: none; display: flex; align-items: baseline; gap: 9px; white-space: nowrap;">
+          Kies Café
+          <span style="width: 5px; height: 5px; border-radius: 50%; background: var(--color-accent); display: inline-block;"></span>
+        </a>
+        <span aria-hidden="true" style="flex: 1 1 0; height: 1px; background: linear-gradient(to right, var(--color-accent), transparent); display: inline-block;"></span>
+      </div>
+      <nav style="display: flex; flex-direction: column; align-items: center; gap: 10px; font-size: 14px;">
+        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px 22px;">
+          <a class="top-nav-link" href="#favoritos">Favoritos</a>
+          <a class="top-nav-link" href="#conocenos">Conócenos</a>
+          <a class="top-nav-link" href="#ubicacion">Ubicación</a>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px 22px;">
+          <a class="top-nav-link" href="#contacto">Contacto</a>
+          <a class="btn btn-primary" href="#carta" style="white-space: nowrap;">Ver la carta</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="top" style="max-width: 1240px; margin: 0 auto; padding: clamp(36px, 7vw, 96px) clamp(18px, 4vw, 40px) 0;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: clamp(28px, 5vw, 68px); align-items: end;">
+      <div>
+        <p data-reveal style="display: flex; align-items: center; gap: 12px; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--color-accent-700); font-variant-numeric: tabular-nums; margin: 0 0 clamp(18px, 3vw, 30px);">
+          <span style="width: 44px; height: 1px; background: var(--color-accent); display: inline-block;"></span>
+          Santa María la Ribera · CDMX
+        </p>
+        <h1 data-reveal style="font-weight: 400; font-size: clamp(44px, 8.2vw, 92px); line-height: .98; letter-spacing: -.02em; margin: 0 0 clamp(20px, 3vw, 28px); text-wrap: balance;">
+          Galletas estilo<br>Nueva York, recién<br>salidas del <em style="font-style: italic; color: var(--color-accent-700);">horno</em>.
+        </h1>
+        <p data-reveal style="max-width: 46ch; font-size: clamp(16px, 1.5vw, 18px); line-height: 1.72; text-align: justify; hyphens: auto; margin: 0 0 clamp(24px, 4vw, 34px); color: color-mix(in srgb, var(--color-text) 82%, transparent);">
+          Gruesas, suaves por dentro y siempre ocho sabores en la vitrina: chispas de chocolate, Nutella, matcha, brownie, Oreo, avena con arándano, maple y nuez. Al lado, café de especialidad frío o caliente y un brunch que se sirve de 8:30 a 14:30.
+        </p>
+        <div data-reveal style="display: flex; flex-wrap: wrap; gap: 12px;">
+          <a class="btn btn-primary" href="#carta" style="padding: 13px 26px; font-size: 15px;">Ver la carta de galletas</a>
+          <a class="btn btn-secondary" href="#ubicacion" style="padding: 13px 26px; font-size: 15px;">Cómo llegar</a>
+        </div>
+      </div>
+      <div data-reveal style="position: relative;">
+        <div id="hero-plate" class="plate" style="width: 100%; aspect-ratio: 4 / 5; border-radius: 2px; will-change: transform;">
+          <img src="https://images.rappi.com.mx/products/81645f28-59c3-49d9-999f-2e6922fc8b43.png?d=1000x1000&e=webp&q=80" alt="Galleta partida a la mitad, con el centro tibio" loading="eager">
+        </div>
+        <div style="position: absolute; bottom: -1px; left: -1px; background: var(--color-bg); border-top: 1px solid var(--color-divider); border-right: 1px solid var(--color-divider); padding: 14px 20px 6px 0;">
+          <p style="margin: 0; font-family: var(--font-heading); font-size: clamp(28px, 3.4vw, 40px); line-height: 1; font-variant-numeric: tabular-nums; font-weight: 400;">$60</p>
+          <p class="text-muted" style="margin: 4px 0 0; font-size: 11px; letter-spacing: .12em; text-transform: uppercase;">cualquier galleta</p>
+        </div>
+      </div>
+    </div>
+
+    <div data-reveal style="margin-top: clamp(40px, 6vw, 78px); border-top: 1px solid var(--color-divider); border-bottom: 1px solid var(--color-divider); display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));">
+      <div style="padding: clamp(18px, 2.4vw, 26px) 0; border-right: 1px solid var(--color-divider); padding-right: 24px;">
+        <h6 style="margin: 0 0 6px; color: var(--color-accent-700);">Horneado</h6>
+        <p style="margin: 0; font-size: 14px; line-height: 1.6;">Tandas nuevas cada dos horas, de la mañana al cierre.</p>
+      </div>
+      <div style="padding: clamp(18px, 2.4vw, 26px) 24px; border-right: 1px solid var(--color-divider);">
+        <h6 style="margin: 0 0 6px; color: var(--color-accent-700);">Para trabajar</h6>
+        <p style="margin: 0; font-size: 14px; line-height: 1.6;">Wifi estable, enchufe en cada mesa y música baja.</p>
+      </div>
+      <div style="padding: clamp(18px, 2.4vw, 26px) 24px;">
+        <h6 style="margin: 0 0 6px; color: var(--color-accent-700);">En familia</h6>
+        <p style="margin: 0; font-size: 14px; line-height: 1.6;">Mesas largas, sillas altas y vasos con tapa para los niños.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="conocenos" style="max-width: 1240px; margin: 0 auto; padding: clamp(64px, 10vw, 132px) clamp(18px, 4vw, 40px) 0;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(28px, 5vw, 72px); align-items: start;">
+      <div data-reveal>
+        <h6 style="color: var(--color-accent-700); margin-bottom: clamp(16px, 2vw, 24px);">Conócenos</h6>
+        <h2 style="font-weight: 400; font-size: clamp(32px, 4.6vw, 54px); line-height: 1.06; letter-spacing: -.015em; margin: 0 0 clamp(18px, 3vw, 26px); text-wrap: balance;">Una cocina pequeña, una receta terca.</h2>
+        <p style="text-align: justify; hyphens: auto; font-size: 16px; line-height: 1.78; color: color-mix(in srgb, var(--color-text) 84%, transparent);">
+          Kies abrió en una casa porfiriana de Santa María la Ribera con una idea sencilla: hacer la galleta que no encontrábamos en la ciudad. Grande, con el borde crujiente y el centro apenas cuajado, del tamaño que obliga a partirla y compartirla.
+        </p>
+        <p style="text-align: justify; hyphens: auto; font-size: 16px; line-height: 1.78; color: color-mix(in srgb, var(--color-text) 84%, transparent);">
+          La cocina creció con el local: además de la vitrina hay brunch por la mañana —chilakies, pan francés, toasts, hot cakes de elote—, sándwiches y botanas para la tarde, y una barra de café que va del americano al cold brew con piloncillo. No hay prisa: si necesitas la mesa tres horas, es tuya.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: clamp(18px, 3vw, 26px);">
+          <span class="tag tag-outline">Galletas estilo NY</span>
+          <span class="tag tag-outline">Brunch 8:30–14:30</span>
+          <span class="tag tag-outline">Cold brew de la casa</span>
+          <span class="tag tag-outline">Entrega a domicilio</span>
+        </div>
+      </div>
+      <div data-reveal style="display: grid; gap: clamp(14px, 2vw, 22px);">
+        <figure class="plate" style="border-radius: 2px; aspect-ratio: 3 / 2;">
+          <img src="kies-sala.jpg" alt="Barra de café — máquina espresso, molino y repisas de madera" loading="lazy">
+        </figure>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: clamp(14px, 2vw, 22px);">
+          <figure class="plate" style="border-radius: 2px; aspect-ratio: 1 / 1;">
+            <img src="https://images.rappi.com.mx/products/e696139d-2b93-4e1b-8b16-43218b3bc698.png?d=600x600&e=webp&q=80" alt="Detalle de barra — cold brew latte" loading="lazy">
+          </figure>
+          <figure class="plate" style="border-radius: 2px; aspect-ratio: 1 / 1;">
+            <img src="https://images.rappi.com.mx/products/80963abd-0e70-4541-a950-8806bfd553e8.png?d=600x600&e=webp&q=80" alt="Plato del brunch — toast de aguacate" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top: clamp(64px, 10vw, 132px); background: var(--color-accent-900); color: var(--color-neutral-100);">
+    <div style="max-width: 1240px; margin: 0 auto; padding: clamp(56px, 8vw, 104px) clamp(18px, 4vw, 40px);">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(30px, 5vw, 72px); align-items: center;">
+        <div data-reveal>
+          <h6 style="color: var(--color-accent-300); margin-bottom: clamp(16px, 2vw, 24px);">La galleta</h6>
+          <h2 style="font-weight: 400; font-size: clamp(30px, 4.2vw, 50px); line-height: 1.08; letter-spacing: -.015em; margin: 0 0 clamp(24px, 4vw, 40px); color: var(--color-neutral-100); text-wrap: balance;">Tres cosas que no negociamos.</h2>
+          <ol style="list-style: none; margin: 0; padding: 0; display: grid; gap: clamp(18px, 2.6vw, 28px);">
+            <li style="display: grid; grid-template-columns: auto 1fr; gap: clamp(16px, 2.4vw, 28px); align-items: baseline; border-top: 1px solid color-mix(in srgb, var(--color-accent-300) 30%, transparent); padding-top: clamp(14px, 2vw, 20px);">
+              <span style="font-family: var(--font-heading); font-size: clamp(34px, 4.4vw, 52px); line-height: 1; color: transparent; -webkit-text-stroke: 1px var(--color-accent-400); font-variant-numeric: tabular-nums;">01</span>
+              <div>
+                <h4 style="margin: 0 0 5px; font-weight: 400; font-size: clamp(19px, 2vw, 23px); color: var(--color-neutral-100);">Veinticuatro horas de frío</h4>
+                <p style="margin: 0; font-size: 14.5px; line-height: 1.7; color: color-mix(in srgb, var(--color-neutral-100) 74%, transparent);">La masa reposa un día completo antes de entrar al horno. Ahí nace el sabor a caramelo del borde.</p>
+              </div>
+            </li>
+            <li style="display: grid; grid-template-columns: auto 1fr; gap: clamp(16px, 2.4vw, 28px); align-items: baseline; border-top: 1px solid color-mix(in srgb, var(--color-accent-300) 30%, transparent); padding-top: clamp(14px, 2vw, 20px);">
+              <span style="font-family: var(--font-heading); font-size: clamp(34px, 4.4vw, 52px); line-height: 1; color: transparent; -webkit-text-stroke: 1px var(--color-accent-400); font-variant-numeric: tabular-nums;">02</span>
+              <div>
+                <h4 style="margin: 0 0 5px; font-weight: 400; font-size: clamp(19px, 2vw, 23px); color: var(--color-neutral-100);">Chocolate en trozo, nunca en chispa</h4>
+                <p style="margin: 0; font-size: 14.5px; line-height: 1.7; color: color-mix(in srgb, var(--color-neutral-100) 74%, transparent);">Barras partidas a mano, para que queden vetas y no puntos.</p>
+              </div>
+            </li>
+            <li style="display: grid; grid-template-columns: auto 1fr; gap: clamp(16px, 2.4vw, 28px); align-items: baseline; border-top: 1px solid color-mix(in srgb, var(--color-accent-300) 30%, transparent); padding-top: clamp(14px, 2vw, 20px);">
+              <span style="font-family: var(--font-heading); font-size: clamp(34px, 4.4vw, 52px); line-height: 1; color: transparent; -webkit-text-stroke: 1px var(--color-accent-400); font-variant-numeric: tabular-nums;">03</span>
+              <div>
+                <h4 style="margin: 0 0 5px; font-weight: 400; font-size: clamp(19px, 2vw, 23px); color: var(--color-neutral-100);">Se vende el mismo día</h4>
+                <p style="margin: 0; font-size: 14.5px; line-height: 1.7; color: color-mix(in srgb, var(--color-neutral-100) 74%, transparent);">Lo que no sale del horno hoy no se vende mañana. Punto.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <div data-reveal class="plate" style="border-radius: 2px; aspect-ratio: 4 / 5;">
+          <img src="https://images.rappi.com.mx/products/d18fd2f0-3287-4ffa-891d-398a99759031.png?d=800x800&e=webp&q=80" alt="Foto vertical — galleta de brownie" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="favoritos" style="max-width: 1240px; margin: 0 auto; padding: clamp(64px, 10vw, 132px) clamp(18px, 4vw, 40px) 0;">
+    <div data-reveal style="display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 14px 32px; border-bottom: 1px solid var(--color-divider); padding-bottom: clamp(18px, 3vw, 28px);">
+      <div>
+        <h6 style="color: var(--color-accent-700); margin-bottom: 10px;">Los Favoritos</h6>
+        <h2 style="font-weight: 400; font-size: clamp(32px, 4.6vw, 54px); line-height: 1.06; letter-spacing: -.015em; margin: 0;">Lo que más se pide.</h2>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: clamp(18px, 3vw, 28px); padding-top: clamp(26px, 4vw, 40px);">
+      <article data-reveal style="display: flex; flex-direction: column; gap: 14px;">
+        <figure class="plate" style="border-radius: 2px; aspect-ratio: 1 / 1;">
+          <img src="https://images.rappi.com.mx/products/27ef75e9-2595-4068-8fb2-f5ee36632a6c.png?d=700x700&e=webp&q=80" alt="Galleta de maple y nuez" loading="lazy">
+        </figure>
+        <div style="display: flex; align-items: baseline; gap: 12px; border-top: 1px solid var(--color-divider); padding-top: 12px;">
+          <h4 style="margin: 0; font-weight: 400; font-size: clamp(19px, 1.9vw, 22px);">Galleta de maple y nuez</h4>
+          <span style="margin-left: auto; font-family: var(--font-heading); font-size: 18px; font-variant-numeric: tabular-nums; color: var(--color-accent-700);">$60</span>
+        </div>
+        <p class="text-muted" style="margin: 0; font-size: 13.5px; line-height: 1.65;">Galleta con trozos de nuez y sabor a maple. Estilo pay de nuez, con nuez pecana en cada bocado.</p>
+      </article>
+      <article data-reveal style="display: flex; flex-direction: column; gap: 14px;">
+        <figure class="plate" style="border-radius: 2px; aspect-ratio: 1 / 1;">
+          <img src="https://images.rappi.com.mx/products/cc146003-3952-4675-9105-6f9fcc4a07fa.png?d=700x700&e=webp&q=80" alt="Chilakies" loading="lazy">
+        </figure>
+        <div style="display: flex; align-items: baseline; gap: 12px; border-top: 1px solid var(--color-divider); padding-top: 12px;">
+          <h4 style="margin: 0; font-weight: 400; font-size: clamp(19px, 1.9vw, 22px);">Chilakies</h4>
+          <span style="margin-left: auto; font-family: var(--font-heading); font-size: 18px; font-variant-numeric: tabular-nums; color: var(--color-accent-700);">$215</span>
+        </div>
+        <p class="text-muted" style="margin: 0; font-size: 13.5px; line-height: 1.65;">Chilaquiles hechos en casa: crema, queso, cebolla, cilantro, y la salsa y proteína de tu elección.</p>
+      </article>
+      <article data-reveal style="display: flex; flex-direction: column; gap: 14px;">
+        <figure class="plate" style="border-radius: 2px; aspect-ratio: 1 / 1;">
+          <img src="https://images.rappi.com.mx/products/e696139d-2b93-4e1b-8b16-43218b3bc698.png?d=700x700&e=webp&q=80" alt="Cold brew latte" loading="lazy">
+        </figure>
+        <div style="display: flex; align-items: baseline; gap: 12px; border-top: 1px solid var(--color-divider); padding-top: 12px;">
+          <h4 style="margin: 0; font-weight: 400; font-size: clamp(19px, 1.9vw, 22px);">Cold brew latte</h4>
+          <span style="margin-left: auto; font-family: var(--font-heading); font-size: 18px; font-variant-numeric: tabular-nums; color: var(--color-accent-700);">$90</span>
+        </div>
+        <p class="text-muted" style="margin: 0; font-size: 13.5px; line-height: 1.65;">Café infusionado en frío por un largo tiempo, con piloncillo y leche. Agrega la leche que prefieras.</p>
+      </article>
+      <article data-reveal style="display: flex; flex-direction: column; gap: 14px;">
+        <figure class="plate" style="border-radius: 2px; aspect-ratio: 1 / 1;">
+          <img src="https://images.rappi.com.mx/products/83198a38-81a0-4b50-8961-f064c294c9e4.png?d=700x700&e=webp&q=80" alt="Burnt cheesecake" loading="lazy">
+        </figure>
+        <div style="display: flex; align-items: baseline; gap: 12px; border-top: 1px solid var(--color-divider); padding-top: 12px;">
+          <h4 style="margin: 0; font-weight: 400; font-size: clamp(19px, 1.9vw, 22px);">Burnt cheesecake</h4>
+          <span style="margin-left: auto; font-family: var(--font-heading); font-size: 18px; font-variant-numeric: tabular-nums; color: var(--color-accent-700);">$120</span>
+        </div>
+        <p class="text-muted" style="margin: 0; font-size: 13.5px; line-height: 1.65;">Pastel de queso estilo «burnt» con cobertura de frutas y flores comestibles.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="carta" style="max-width: 1240px; margin: 0 auto; padding: clamp(64px, 10vw, 132px) clamp(18px, 4vw, 40px) 0;">
+    <div data-reveal style="display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px 32px; border-bottom: 1px solid var(--color-divider); padding-bottom: clamp(18px, 3vw, 28px);">
+      <div>
+        <h6 style="color: var(--color-accent-700); margin-bottom: 10px;">La carta</h6>
+        <h2 style="font-weight: 400; font-size: clamp(32px, 4.6vw, 54px); line-height: 1.06; letter-spacing: -.015em; margin: 0;">Galletas, café y algo frío.</h2>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(30px, 5vw, 64px); padding-top: clamp(28px, 4vw, 44px);">
+      <div data-reveal>
+        <h3 style="font-weight: 400; font-size: clamp(22px, 2.4vw, 27px); margin: 0 0 4px;">Galletas estilo Nueva York</h3>
+        <p class="text-muted" style="font-size: 13px; margin: 0 0 clamp(12px, 2vw, 18px);">Ocho sabores en vitrina · $60 cada una</p>
+        <table class="table" style="font-size: 15px; margin-bottom: clamp(26px, 4vw, 40px);">
+          <tbody>
+            <tr><td style="padding-left: 0;">Chispas de chocolate<span class="text-muted" style="display: block; font-size: 12.5px;">Chocolate semiamargo</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$60</td></tr>
+            <tr><td style="padding-left: 0;">Nutella<span class="text-muted" style="display: block; font-size: 12.5px;">Rellena de crema de avellanas y cacao</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$60</td></tr>
+            <tr><td style="padding-left: 0;">Oreo con chocolate<span class="text-muted" style="display: block; font-size: 12.5px;">Trozos de Oreo y chocolate</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$60</td></tr>
+            <tr><td style="padding-left: 0;">Matcha con chocolate<span class="text-muted" style="display: block; font-size: 12.5px;">Masa de matcha, chocolate visible al partirla</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$60</td></tr>
+            <tr><td style="padding-left: 0;">Brownie<span class="text-muted" style="display: block; font-size: 12.5px;">Textura suave, sabor a chocolate</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$60</td></tr>
+            <tr><td style="padding-left: 0;">Maple y nuez<span class="text-muted" style="display: block; font-size: 12.5px;">Trozos de nuez y sabor a maple</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$60</td></tr>
+            <tr><td style="padding-left: 0;">Avena con arándano<span class="text-muted" style="display: block; font-size: 12.5px;">Avena y arándano</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$60</td></tr>
+            <tr><td style="padding-left: 0;">Conejito<span class="text-muted" style="display: block; font-size: 12.5px;">Trozos de chocolate y figura de conejito</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$60</td></tr>
+          </tbody>
+        </table>
+        <h3 style="font-weight: 400; font-size: clamp(22px, 2.4vw, 27px); margin: 0 0 4px;">Postres</h3>
+        <p class="text-muted" style="font-size: 13px; margin: 0 0 clamp(12px, 2vw, 18px);">De la vitrina, por rebanada</p>
+        <table class="table" style="font-size: 15px;">
+          <tbody>
+            <tr><td style="padding-left: 0;">Pastel de chocolate con Lotus</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$140</td></tr>
+            <tr><td style="padding-left: 0;">Burnt cheesecake</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$120</td></tr>
+            <tr><td style="padding-left: 0;">Panqué de zanahoria</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$96</td></tr>
+            <tr><td style="padding-left: 0;">Panqué de plátano</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$96</td></tr>
+            <tr><td style="padding-left: 0;">Brownie</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$60</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-reveal>
+        <h3 style="font-weight: 400; font-size: clamp(22px, 2.4vw, 27px); margin: 0 0 4px;">Café</h3>
+        <p class="text-muted" style="font-size: 13px; margin: 0 0 clamp(12px, 2vw, 18px);">Frío o caliente, como lo pidas</p>
+        <table class="table" style="font-size: 15px; margin-bottom: clamp(26px, 4vw, 40px);">
+          <tbody>
+            <tr><td style="padding-left: 0;">Americano</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$60</td></tr>
+            <tr><td style="padding-left: 0;">Capuchino</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$66</td></tr>
+            <tr><td style="padding-left: 0;">Latte</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$72</td></tr>
+            <tr><td style="padding-left: 0;">Flat white</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$72</td></tr>
+            <tr><td style="padding-left: 0;">Moka</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$84</td></tr>
+            <tr><td style="padding-left: 0;">Cold brew</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$84</td></tr>
+            <tr><td style="padding-left: 0;">Cold brew latte<span class="text-muted" style="display: block; font-size: 12.5px;">Con piloncillo y leche</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$90</td></tr>
+            <tr><td style="padding-left: 0;">Dirty horchata<span class="text-muted" style="display: block; font-size: 12.5px;">Horchata con espresso</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$90</td></tr>
+            <tr><td style="padding-left: 0;">Dirty chai<span class="text-muted" style="display: block; font-size: 12.5px;">Chai con un shot de espresso</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$85</td></tr>
+          </tbody>
+        </table>
+        <h3 style="font-weight: 400; font-size: clamp(22px, 2.4vw, 27px); margin: 0 0 4px;">Sin café</h3>
+        <p class="text-muted" style="font-size: 13px; margin: 0 0 clamp(12px, 2vw, 18px);">Para los que vienen por la galleta</p>
+        <table class="table" style="font-size: 15px;">
+          <tbody>
+            <tr><td style="padding-left: 0;">Matcha latte</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$78</td></tr>
+            <tr><td style="padding-left: 0;">Chai latte</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$78</td></tr>
+            <tr><td style="padding-left: 0;">Horchata matcha</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$90</td></tr>
+            <tr><td style="padding-left: 0;">Chocolate caliente</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$72</td></tr>
+            <tr><td style="padding-left: 0;">Soda de la casa<span class="text-muted" style="display: block; font-size: 12.5px;">Con tónicos artesanales, bien fría</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$78</td></tr>
+            <tr><td style="padding-left: 0;">Kombucha</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$84</td></tr>
+            <tr><td style="padding-left: 0;">Malteada</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$110</td></tr>
+            <tr><td style="padding-left: 0;">Frappé</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$110</td></tr>
+            <tr><td style="padding-left: 0;">Jugo de temporada</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$60</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div data-reveal>
+        <h3 style="font-weight: 400; font-size: clamp(22px, 2.4vw, 27px); margin: 0 0 4px;">Brunch</h3>
+        <p class="text-muted" style="font-size: 13px; margin: 0 0 clamp(12px, 2vw, 18px);">Todos los días de 8:30 a 14:30</p>
+        <table class="table" style="font-size: 15px; margin-bottom: clamp(26px, 4vw, 40px);">
+          <tbody>
+            <tr><td style="padding-left: 0;">Chilakies<span class="text-muted" style="display: block; font-size: 12.5px;">Con crema, queso, cebolla, cilantro, y la salsa y proteína que elijas</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$215</td></tr>
+            <tr><td style="padding-left: 0;">Enchiladas suizas<span class="text-muted" style="display: block; font-size: 12.5px;">Pollo o huevo, gratinadas</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$240</td></tr>
+            <tr><td style="padding-left: 0;">Toast de aguacate<span class="text-muted" style="display: block; font-size: 12.5px;">Brioche, aguacate tatemado, serrano, cherry, brotes</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$205</td></tr>
+            <tr><td style="padding-left: 0;">Toast de berries<span class="text-muted" style="display: block; font-size: 12.5px;">Cremoso de queso, frutos rojos, parmesano y miel</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$215</td></tr>
+            <tr><td style="padding-left: 0;">Pan francés<span class="text-muted" style="display: block; font-size: 12.5px;">Brioche con compota de frutos rojos</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$205</td></tr>
+            <tr><td style="padding-left: 0;">Hot cakes de elote</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$205</td></tr>
+            <tr><td style="padding-left: 0;">Plato de frutas</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$150</td></tr>
+          </tbody>
+        </table>
+        <h3 style="font-weight: 400; font-size: clamp(22px, 2.4vw, 27px); margin: 0 0 4px;">Sándwiches y botanas</h3>
+        <p class="text-muted" style="font-size: 13px; margin: 0 0 clamp(12px, 2vw, 18px);">Para la tarde larga</p>
+        <table class="table" style="font-size: 15px;">
+          <tbody>
+            <tr><td style="padding-left: 0;">BLT</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$230</td></tr>
+            <tr><td style="padding-left: 0;">Cheesesteak</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$205</td></tr>
+            <tr><td style="padding-left: 0;">Pollo al pesto</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$205</td></tr>
+            <tr><td style="padding-left: 0;">Grilled cheese</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$180</td></tr>
+            <tr><td style="padding-left: 0;">Croquetas de queso Oaxaca<span class="text-muted" style="display: block; font-size: 12.5px;">Orden de cinco, con hierbas frescas</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$155</td></tr>
+            <tr><td style="padding-left: 0;">Toast de hongos<span class="text-muted" style="display: block; font-size: 12.5px;">Centeno, pesto, parmesano, balsámico</span></td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap; vertical-align: top;">$155</td></tr>
+            <tr><td style="padding-left: 0;">Taquitos de pork belly</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$135</td></tr>
+            <tr><td style="padding-left: 0;">Papas de ajo y parmesano</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">$95</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div data-reveal style="margin-top: clamp(30px, 5vw, 56px); display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: clamp(14px, 2vw, 22px);">
+      <figure class="plate" style="border-radius: 2px; aspect-ratio: 1 / 1;">
+        <img src="https://images.rappi.com.mx/products/f5d6d7e4-3f95-4d7d-87dd-673f82ee6cf7.png?d=600x600&e=webp&q=80" alt="Galleta de chispas de chocolate" loading="lazy">
+      </figure>
+      <figure class="plate" style="border-radius: 2px; aspect-ratio: 1 / 1;">
+        <img src="https://images.rappi.com.mx/products/0a1eb6d4-0cb1-499f-b3f1-053d5f113d98.png?d=600x600&e=webp&q=80" alt="Galleta de matcha con chocolate" loading="lazy">
+      </figure>
+      <figure class="plate" style="border-radius: 2px; aspect-ratio: 1 / 1;">
+        <img src="https://images.rappi.com.mx/products/c6188ec6-84eb-4085-84e7-cfa2fe0af821.png?d=600x600&e=webp&q=80" alt="Galleta de Oreo con chocolate" loading="lazy">
+      </figure>
+      <figure class="plate" style="border-radius: 2px; aspect-ratio: 1 / 1;">
+        <img src="https://images.rappi.com.mx/products/2a746bf3-c14a-4423-9f2e-02502b9078bf.png?d=600x600&e=webp&q=80" alt="Pastel de chocolate con Lotus" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <section id="testimonios" style="max-width: 1240px; margin: 0 auto; padding: clamp(64px, 10vw, 132px) clamp(18px, 4vw, 40px) 0;">
+    <div data-reveal style="display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 14px 32px;">
+      <div>
+        <h6 style="color: var(--color-accent-700); margin-bottom: 10px;">Lo que dicen</h6>
+        <h2 style="font-weight: 400; font-size: clamp(32px, 4.6vw, 54px); line-height: 1.06; letter-spacing: -.015em; margin: 0;">Los que ya tienen su mesa.</h2>
+      </div>
+    </div>
+    <hr class="hr" style="margin: clamp(22px, 3vw, 34px) 0 clamp(26px, 4vw, 40px);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: clamp(18px, 3vw, 28px);">
+      <blockquote data-reveal class="card" style="margin: 0; padding: clamp(22px, 3vw, 30px); gap: clamp(14px, 2vw, 20px);">
+        <p style="margin: 0; font-family: var(--font-heading); font-size: clamp(19px, 2vw, 22px); line-height: 1.42; font-weight: 400;">«Vengo con la laptop a las nueve y me quedo hasta la comida. Hay enchufe en cada mesa y nadie te apura.»</p>
+        <footer class="card-meta" style="margin-top: auto;"><span style="width: 22px; height: 1px; background: var(--color-accent); display: inline-block;"></span> Mariana R., diseñadora</footer>
+      </blockquote>
+      <blockquote data-reveal class="card" style="margin: 0; padding: clamp(22px, 3vw, 30px); gap: clamp(14px, 2vw, 20px);">
+        <p style="margin: 0; font-family: var(--font-heading); font-size: clamp(19px, 2vw, 22px); line-height: 1.42; font-weight: 400;">«Mis hijos piden la de chispas con sal y yo el café de olla. Se volvió nuestro plan de los sábados.»</p>
+        <footer class="card-meta" style="margin-top: auto;"><span style="width: 22px; height: 1px; background: var(--color-accent); display: inline-block;"></span> Julio y familia, vecinos de la colonia</footer>
+      </blockquote>
+      <blockquote data-reveal class="card" style="margin: 0; padding: clamp(22px, 3vw, 30px); gap: clamp(14px, 2vw, 20px);">
+        <p style="margin: 0; font-family: var(--font-heading); font-size: clamp(19px, 2vw, 22px); line-height: 1.42; font-weight: 400;">«La de pistache es la mejor galleta que he comido en la ciudad. Y el lugar huele a domingo.»</p>
+        <footer class="card-meta" style="margin-top: auto;"><span style="width: 22px; height: 1px; background: var(--color-accent); display: inline-block;"></span> Andrés T., a dos calles del Kiosco Morisco</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="ubicacion" style="max-width: 1240px; margin: 0 auto; padding: clamp(64px, 10vw, 132px) clamp(18px, 4vw, 40px) 0;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(28px, 5vw, 64px); align-items: start;">
+      <div data-reveal>
+        <h6 style="color: var(--color-accent-700); margin-bottom: clamp(14px, 2vw, 22px);">Ubicación</h6>
+        <h2 style="font-weight: 400; font-size: clamp(32px, 4.6vw, 54px); line-height: 1.06; letter-spacing: -.015em; margin: 0 0 clamp(18px, 3vw, 26px);">A una cuadra del Kiosco Morisco.</h2>
+        <p style="font-size: 17px; line-height: 1.7; margin: 0 0 clamp(20px, 3vw, 28px); max-width: 34ch;">
+          Dr. Atl 238, Santa María la Ribera<br>Cuauhtémoc, 06400, Ciudad de México
+        </p>
+        <table class="table" style="max-width: 380px; margin-bottom: clamp(20px, 3vw, 28px);">
+          <tbody>
+            <tr><td style="padding-left: 0;">Lunes</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">8:00 – 18:00</td></tr>
+            <tr><td style="padding-left: 0;">Martes a sábado</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">7:30 – 21:00</td></tr>
+            <tr><td style="padding-left: 0;">Domingo</td><td style="text-align: right; padding-right: 0; font-variant-numeric: tabular-nums; white-space: nowrap;">10:00 – 16:30</td></tr>
+          </tbody>
+        </table>
+        <p class="text-muted" style="font-size: 14px; line-height: 1.7; max-width: 40ch;">Metro San Cosme a ocho minutos caminando. Estacionamiento en la calle; los sábados conviene llegar antes de las once.</p>
+        <a class="btn btn-primary" href="https://www.google.com/maps/place/Kies+Caf%C3%A9/@19.4515272,-99.1584057,17z/data=!4m15!1m8!3m7!1s0x85d1f96354494a2d:0x7c0ff080540d2e2c!2sKies+Caf%C3%A9!8m2!3d19.4518591!4d-99.1560151!10e9!16s%2Fg%2F11vywkyhr2!3m5!1s0x85d1f96354494a2d:0x7c0ff080540d2e2c!8m2!3d19.4518591!4d-99.1560151!16s%2Fg%2F11vywkyhr2?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" style="padding: 12px 24px; font-size: 15px; margin-top: 6px;">Abrir en Google Maps</a>
+      </div>
+      <div data-reveal class="plate" style="border-radius: 2px; aspect-ratio: 1 / 1; min-height: 320px;">
+        <iframe title="Mapa de Kies Café en Santa María la Ribera" src="https://www.openstreetmap.org/export/embed.html?bbox=-99.1655%2C19.4470%2C-99.1475%2C19.4600&layer=mapnik&marker=19.4535%2C-99.1565" style="width: 100%; height: 100%; border: 0; display: block; filter: grayscale(0.4); position: relative;" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" style="max-width: 1240px; margin: clamp(64px, 10vw, 132px) auto 0; padding: 0 clamp(18px, 4vw, 40px);">
+    <div data-reveal style="background: var(--color-accent-300); border-radius: 2px; padding: clamp(28px, 4vw, 44px) clamp(24px, 4vw, 40px); text-align: center;">
+      <h6 style="color: var(--color-accent-900); margin-bottom: clamp(18px, 2.6vw, 28px);">Contacto</h6>
+      <dl style="margin: 0; display: flex; flex-wrap: wrap; justify-content: center; column-gap: clamp(28px, 5vw, 56px); row-gap: 20px;">
+        <div>
+          <dt style="font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: color-mix(in srgb, var(--color-accent-900) 65%, transparent);">Correo</dt>
+          <dd style="margin: 4px 0 0; font-size: 16px;"><a href="mailto:hola@kiescafe.mx" style="color: var(--color-accent-900);">hola@kiescafe.mx</a></dd>
+        </div>
+        <div>
+          <dt style="font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: color-mix(in srgb, var(--color-accent-900) 65%, transparent);">Teléfono y WhatsApp</dt>
+          <dd style="margin: 4px 0 0; font-size: 16px; font-variant-numeric: tabular-nums; color: var(--color-accent-900);">55 0000 0000 <span style="font-size: 13px; color: color-mix(in srgb, var(--color-accent-900) 65%, transparent);">· por confirmar</span></dd>
+        </div>
+        <div>
+          <dt style="font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: color-mix(in srgb, var(--color-accent-900) 65%, transparent);">Instagram</dt>
+          <dd style="margin: 4px 0 0; font-size: 16px;"><a href="https://www.instagram.com/kies_mx/" target="_blank" rel="noopener" style="color: var(--color-accent-900);">@kies_mx</a></dd>
+        </div>
+        <div>
+          <dt style="font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: color-mix(in srgb, var(--color-accent-900) 65%, transparent);">Rappi</dt>
+          <dd style="margin: 4px 0 0; font-size: 16px;"><a href="https://www.rappi.com.mx/restaurantes/1930195740-kies-cafe" target="_blank" rel="noopener" style="color: var(--color-accent-900);">Pide ya</a></dd>
+        </div>
+        <div>
+          <dt style="font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: color-mix(in srgb, var(--color-accent-900) 65%, transparent);">UberEats</dt>
+          <dd style="margin: 4px 0 0; font-size: 16px;"><a href="https://www.ubereats.com/mx/store/kies-cafe-mexico-city/C1BGt5FzQQ6bMD_j74pLfA?diningMode=DELIVERY&sc=SEARCH_SUGGESTION&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAcGRvZgJleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAaeGAN9KK9ZbHqdSQhVI_443rzylqi3TG9tK61tW3W8Zu5O-uAFDtnw19L4Dcg_aem_yGCwu87pP-fu6jb4yf9FOg" target="_blank" rel="noopener" style="color: var(--color-accent-900);">Pide ya</a></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <footer style="margin-top: clamp(64px, 9vw, 118px); border-top: 1px solid var(--color-divider);">
+    <div style="max-width: 1240px; margin: 0 auto; padding: clamp(26px, 4vw, 42px) clamp(18px, 4vw, 40px); display: flex; flex-wrap: wrap; gap: 14px 32px; align-items: baseline; justify-content: space-between;">
+      <p style="margin: 0; font-family: var(--font-heading); font-size: 19px;">Kies Café</p>
+      <p class="text-muted" style="margin: 0; font-size: 13px;">Dr. Atl 238, Santa María la Ribera · CDMX</p>
+      <p class="text-muted" style="margin: 0; font-size: 13px;">Horneamos todos los días.</p>
+    </div>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

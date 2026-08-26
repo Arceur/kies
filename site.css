@@ -1,0 +1,48 @@
+/* Kies Café — page-specific rules that sit on top of styles.css (the shared
+   Classical design-system tokens/components). Nothing here redefines a
+   token; it only wires plain markup (photos, nav links) into the states the
+   original design-canvas components handled for us. */
+
+html { scroll-behavior: smooth; }
+body { margin: 0; -webkit-font-smoothing: antialiased; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* .plate wraps every content photo; give it a home for an absolutely
+   positioned, cropped <img> (or the no-photo placeholder below). */
+.plate { position: relative; overflow: hidden; display: block; }
+.plate > img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; margin: 0;
+}
+
+.plate-placeholder {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  text-align: center; padding: var(--space-4);
+  background: color-mix(in srgb, var(--color-text) 5%, transparent);
+  border: 1px dashed var(--color-divider);
+}
+.plate-placeholder span {
+  font-size: 12.5px; font-style: italic;
+  color: color-mix(in srgb, var(--color-text) 55%, transparent);
+}
+
+/* Nav links carried their hover state as a design-tool-only style-hover
+   attribute; a real stylesheet needs an actual :hover rule. */
+.top-nav-link {
+  color: inherit; text-decoration: none;
+  border-bottom: 1px solid transparent; padding-bottom: 2px;
+  transition: border-color .15s ease, color .15s ease;
+}
+.top-nav-link:hover {
+  border-bottom-color: var(--color-accent);
+  color: var(--color-accent-700);
+}
+
+[data-reveal] {
+  opacity: 0; transform: translateY(16px);
+  transition: opacity .85s cubic-bezier(.22,.61,.36,1), transform .85s cubic-bezier(.22,.61,.36,1);
+}
+[data-reveal].is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] { opacity: 1; transform: none; transition: none; }
+}
