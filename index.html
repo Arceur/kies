@@ -9,25 +9,25 @@
 <link rel="stylesheet" href="site.css">
 </head>
 <body>
-<div style="background: var(--color-bg); color: var(--color-text); overflow-x: hidden;">
+<div style="background: var(--color-bg); color: var(--color-text);">
 
-  <header id="nav-bar" style="position: sticky; top: 0; z-index: 40; background: color-mix(in srgb, var(--color-bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid transparent; transition: border-color .35s ease, background .35s ease;">
+  <header id="nav-bar" style="position: sticky; top: 0; z-index: 40; background: color-mix(in srgb, var(--color-bg) 88%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-bottom: 1px solid transparent; transition: border-color .35s ease, background .35s ease;">
     <div style="max-width: 1240px; margin: 0 auto; padding: 14px clamp(18px, 4vw, 40px); display: flex; flex-direction: column; gap: 12px;">
-      <div style="display: flex; align-items: center; justify-content: center; gap: 20px; width: 100%;">
+      <div class="brand-row" style="display: flex; align-items: center; justify-content: center; gap: 20px; width: 100%;">
         <span aria-hidden="true" style="flex: 1 1 0; height: 1px; background: linear-gradient(to right, transparent, var(--color-accent)); display: inline-block;"></span>
-        <a href="#top" style="font-family: var(--font-heading); font-size: 21px; letter-spacing: .01em; color: var(--color-text); text-decoration: none; display: flex; align-items: baseline; gap: 9px; white-space: nowrap;">
+        <a href="#top" class="brand-mark" style="font-family: var(--font-heading); letter-spacing: .01em; color: var(--color-text); text-decoration: none; display: flex; align-items: baseline; gap: 9px; white-space: nowrap;">
           Kies Café
-          <span style="width: 5px; height: 5px; border-radius: 50%; background: var(--color-accent); display: inline-block;"></span>
+          <span class="brand-dot" style="width: 5px; height: 5px; border-radius: 50%; background: var(--color-accent); display: inline-block;"></span>
         </a>
         <span aria-hidden="true" style="flex: 1 1 0; height: 1px; background: linear-gradient(to right, var(--color-accent), transparent); display: inline-block;"></span>
       </div>
-      <nav style="display: flex; flex-direction: column; align-items: center; gap: 10px; font-size: 14px;">
-        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px 22px;">
+      <nav style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+        <div class="nav-row" style="display: flex; justify-content: center; flex-wrap: wrap;">
           <a class="top-nav-link" href="#favoritos">Favoritos</a>
           <a class="top-nav-link" href="#conocenos">Conócenos</a>
           <a class="top-nav-link" href="#ubicacion">Ubicación</a>
         </div>
-        <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px 22px;">
+        <div class="nav-row" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
           <a class="top-nav-link" href="#contacto">Contacto</a>
           <a class="btn btn-primary" href="#carta" style="white-space: nowrap;">Ver la carta</a>
         </div>
