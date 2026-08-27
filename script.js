@@ -1,4 +1,11 @@
 (() => {
+  // iOS Safari only enables the :active/:hover pseudo-classes on tap once
+  // some element on the page has a touch listener — otherwise a tap on
+  // .top-nav-link goes straight through with no shading at all. The
+  // listener itself does nothing; registering it is what flips iOS's
+  // behavior on.
+  document.addEventListener('touchstart', () => {}, { passive: true });
+
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const bar = document.getElementById('nav-bar');
   const plate = document.getElementById('hero-plate');
